@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Butler";
+  src: url("/03_Landing_Page/assets/Butler.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Varela Round", serif;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+.menu ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 26px 25px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+.menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all ease 0.5s;
+}
+.menu ul li a:hover::before {
+  width: 120%;
+}
+.content {
+  display: flex;
+  position: relative;
+  margin-top: -80px;
+}
+.content img {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+}
+.common {
+  width: 50%;
+  position: relative;
+}
+.img {
+  position: relative;
+  overflow: hidden;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9;
+}
+.text {
+  position: absolute;
+  bottom: 42%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 7;
+}
+.text h1 {
+  font-family: "Butler";
+  font-size: 82px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.text h5 {
+  font-size: 28px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.btn {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 7;
+}
+.btn a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 25px 60px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.btn a:hover {
+  background-color: #fff;
+  color: #000000;
+}
+.common:hover .btn a {
+  opacity: 1;
+}
+.img-overlay1 {
+  background: #0000005d;
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 576px) {
+  .menu ul li {
+    display: none;
+  }
+  .menu ul li:last-child {
+    display: block;
+  }
+}
