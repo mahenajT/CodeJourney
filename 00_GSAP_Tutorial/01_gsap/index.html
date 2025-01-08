@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP</title>
+    <style>
+      body {
+        background: #1a1a1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300vh;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background: rgb(38, 111, 3);
+        background: linear-gradient(
+          150deg,
+          rgba(38, 111, 3, 1) 0%,
+          rgba(185, 255, 0, 1) 100%
+        );
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <!-- <script src="gsap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.to(".box",{
+            rotation: 360,
+            duration: 2,
+            scrollTrigger:{
+                trigger: ".box",
+                markers: true,
+                scrub: true
+            }
+        })
+      });
+    </script>
+  </body>
+</html>
