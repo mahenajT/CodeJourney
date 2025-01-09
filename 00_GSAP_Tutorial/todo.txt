@@ -1,0 +1,11 @@
+# GSAP
+
+- What is animation?
+- GSAP Introduction
+- GSAP Animation Basics
+- gsap.to("",{}) vs gsap,from("", {})
+- Some other features
+- GSAP Timeline and how to control it?
+- GSAP ScrollTrigger
+- Some other Plugins
+- Project with GSAP
