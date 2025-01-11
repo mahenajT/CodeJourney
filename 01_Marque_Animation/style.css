@@ -12,8 +12,15 @@ body {
   background: #a19f94;
   font-family: "PP Rader";
 }
+.scroll{
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
 .spacer {
-  height: 800px;
+  height: 100vh;
 }
 .marquee {
   position: relative;
