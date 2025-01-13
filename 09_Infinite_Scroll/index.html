@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Scroll</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Main wrapper for our infinite scroll experience -->
+    <div class="container">
+      <!--This list will serve as the parent element for all the project items which will generate later dynamically using JavaScript-->
+      <ul class="project-list">
+        <!-- For ease of styling and to establish a structure of our dynamic content I've included a sample project template within the project list-->
+        <div class="project template" style="display: none">
+          <!--style="display: none";-->
+          <!--Projects title and its index-->
+          <div class="side">
+            <div class="title">
+              <h1>Euphoria</h1>
+              <h1>01</h1>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="side">
+            <div class="img"><img src="images/image-1.jpeg" alt="image" /></div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- 
+Virtualization Techniques; That maintains a dynamic buffer of Dom elements around the
+visible contents by tracking the scroll position and and cloning template elements on demand
+will create a smooth performant infinite scroll
+-->
