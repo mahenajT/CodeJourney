@@ -10,6 +10,6 @@
 | 06  | [Landing Page Reveal On Scroll](https://github.com/mahenajT/CodeJourney/tree/main/06_Reveal_On_Scroll) | [Live Demo](https://mahenajt.github.io/CodeJourney/06_Reveal_On_Scroll)    |
 | 07  | [Sliding Form](https://github.com/mahenajT/CodeJourney/tree/main/07_Sliding_SignUp)                    | [Live Demo](https://mahenajt.github.io/CodeJourney/07_Sliding_SignUp)      |
 | 08  | [Animated Landing Page](https://github.com/mahenajT/CodeJourney/tree/main/08_Landing_Page)         | [Live Demo](https://mahenajt.github.io/CodeJourney/08_Landing_Page)        |
-| 08  | [Animated Landing Page](https://github.com/mahenajT/CodeJourney/tree/main/09_Infinite_Scroll)         | [Live Demo](https://mahenajt.github.io/CodeJourney/09_Infinite_Scroll)        |
+| 09  | [Infinite Scroll](https://github.com/mahenajT/CodeJourney/tree/main/09_Infinite_Scroll)         | [Live Demo](https://mahenajt.github.io/CodeJourney/09_Infinite_Scroll)        |
 
 ---
