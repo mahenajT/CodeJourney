@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #1a1a1a;
+}
+
+/** Boxes with Duration and Delay animation **************************************/
+.handsOnCalculate {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  display: none;
+}
+#box1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 1rem 2rem;
+  background-color: crimson;
+}
+#box2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(40, 45, 119);
+  border-radius: 3rem 1rem 1rem 2rem;
+}
+#box3 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(31, 68, 22);
+}
+
+/** Boxes with Timeline animation **************************************/
+.TIMELINE {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  display: none;
+}
+#box4 {
+  height: 200px;
+  width: 200px;
+  border-radius: 1rem 2rem;
+  background-color: cadetblue;
+}
+#box5 {
+  height: 200px;
+  width: 200px;
+  background-color: darkkhaki;
+  border-radius: 3rem 1rem 1rem 2rem;
+}
+#box6 {
+  height: 200px;
+  width: 200px;
+  background-color: deeppink;
+}
+
+/** Navbar **************************************/
+#nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+h2 {
+  font-size: 2rem;
+}
+#menu {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+h4 {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  white-space: nowrap;
+}
