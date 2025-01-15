@@ -30,7 +30,7 @@ gsap.fromTo(".box", { x: -300 }, { x: 300, duration: 2 });
 
 ---
 
-## 5. Other Features
+## 4. Other Features
 
 - `repeat`: Defines how many times an animation should repeat.
   `-1` makes it repeat infinitely.
@@ -86,17 +86,8 @@ gsap.to('target', {
 });
 ```
 
-- `scrollTrigger` : Triggers animations based on scroll position.
-
-```
-gsap.to(".box", {
-  scrollTrigger: ".box", // The animation will start when '.box' enters the viewport (based on scroll position)
-  x: 500,
-  duration: 2
-});
-```
-
 - **TextAnimation**
+
 ```
 gsap.from("h1", {
   opacity: 0,
@@ -109,3 +100,151 @@ gsap.from("h1", {
 ```
 
 ---
+
+## 5. timeline()
+
+- Allows us to create sequenced or overlapping animations with fine-grained control.
+- Simplifies the process of coordinating multiple animations, instead of managing **_delay_** manually.
+
+```
+const tl = gsap.timeline();
+// Each animation starts after the previous one ends.
+tl.to("element1", {x: 100, duration: 1})
+tl.to("element2", {y: 100, duration: 1})
+tl.to("element3", {rotate: 360, duration: 1})
+```
+
+## 6. scrollTrigger() plugin
+
+- Creates scroll-based animations.
+- CDN
+
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+```
+
+**_Example_**
+
+```
+gsap.to("element", {
+  x: 500,
+  scrollTrigger: {
+    trigger: "element", // Element that triggers the animation.
+    scroller: "body",   // Start when element is in the viewport
+    start: "top 80%",   // Ends when element reaches 30% of the viewport
+    end: "top 30%,      // Makes animation smoother | scrub: 2 (value: 1 - 5)
+    scrub: true
+    markers: true       // Show start and end markers
+    }
+})
+```
+
+**_Pinning Element_**
+
+- Pinning allows elements to stay fixed in place during scrolling.
+
+```
+gsap.to("parent-element element", {
+  transform: "translateX(-150%),
+  scrollTrigger: {
+    trigger: "parent-element",
+    pin: true,
+    scroller: "body",
+    markers: true,
+    start: "top 0%",
+    end: "top -150%",
+    scrub: 2, // For this element is depended on Scroll
+  }
+})
+```
+
+## 6. Advanced Features
+
+### Callbacks
+
+- Triggers custom functions at specific points
+
+```
+gsap.to("element", {
+  scrollTrigger:{
+    trigger: "element",
+    start: "top,
+    end: "top 100px",
+    onEnter: () => console.log("Entered viewport!"),
+    onLeave: () => console.log("Left viewport!"),
+  }
+})
+```
+
+### Animating Multiple Elements
+
+```
+gsap.utils.toArray(".item").forEach((item) => {
+  gsap.from(item, {
+    y: 100,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: item,
+      start: "top 75%",
+      end: "bottom 25%",
+      scrub: true,
+    },
+  });
+});
+```
+
+### Parallax Effect
+
+```
+gsap.to(".background", {
+  y: -200,
+  scrollTrigger: {
+    trigger: ".content",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+```
+
+## 7. SVG (Scalable Vector Graphics)
+
+## SVG Path
+
+- Quadratic and Cubic Bezier Curves
+  - `M` : Move to starting point
+  - `Q` : Define a quadratic Bezier curve with a control point and end point.
+  - `C` : Define a cubic Bezier curve with two control points and an end point.
+
+// The curve starts at (10, 100), bends toward (500, 100) as a control point, and ends at (990, 100)
+
+```
+<path d="M 10 100 Q 500 100 990 100" />
+```
+
+- Dynamic Path Manipulation
+
+```
+initialPath = `M 10 100 Q ${event.x} ${event.y} 990 100`;
+```
+
+- GSAP Integration
+
+```
+gsap.to("svg path", {
+  duration: 0.3,
+  ease: "power3.out",
+  attr: { d: updatedPath },
+});
+```
+
+---
+
+|  #  | Project                                                                                                | Live Demo                                                                               |
+| :-: | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| 01  | [GSAP](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/02_gsap)                     | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/02_gsap)            |
+| 02  | [Timeline](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/03_Timeline)             | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/03_Timeline)        |
+| 03  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/04_ScrollTrigger)   | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/04_ScrollTrigger)   |
+| 04  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/05_ScrollTrigger_2) | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/05_ScrollTrigger_2) |
+| 05  | [SVG](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/06_SVG)                       | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/06_SVG)             |
