@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+#page1 {
+  background: #1a1a1a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page1 h1 {
+  font-size: 10rem;
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-weight: normal;
+}
+#page2 {
+  background: rgb(164, 219, 255);
+  width: 100%;
+  height: 100%;
+  padding: 5vw 0;
+}
+#page2 h1 {
+  font-size: 40vw;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+#page3 {
+  background: #222222;
+  width: 100%;
+  height: 100%;
+}
