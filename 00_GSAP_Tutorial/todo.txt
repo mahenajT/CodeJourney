@@ -8,4 +8,6 @@
 - GSAP Timeline and how to control it?
 - GSAP ScrollTrigger
 - Some other Plugins
-- Project with GSAP
+- Project-1 with GSAP
+    - Custom cursor by the help of GSAP
+      - cursor effect

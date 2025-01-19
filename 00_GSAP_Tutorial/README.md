@@ -239,12 +239,23 @@ gsap.to("svg path", {
 });
 ```
 
+## 8. Cursor Animation
+
+### How it works
+
+1. **Cursor Movement**: 
+   - The custom cursor (`#cursor`) follows the mouse pointer using `mousemove` events and GSAP animations.
+2. **Hover Effect**:
+   - When the mouse enters the image container (`#image`), the cursor enlarges, changes color, and displays "View More."
+   - When the mouse leaves the image container, the cursor reverts to its original size and style.
+
 ---
 
-|  #  | Project                                                                                                | Live Demo                                                                               |
-| :-: | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| 01  | [GSAP](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/02_gsap)                     | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/02_gsap)            |
-| 02  | [Timeline](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/03_Timeline)             | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/03_Timeline)        |
-| 03  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/04_ScrollTrigger)   | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/04_ScrollTrigger)   |
-| 04  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/05_ScrollTrigger_2) | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/05_ScrollTrigger_2) |
-| 05  | [SVG](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/06_SVG)                       | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/06_SVG)             |
+|  #  | Project                                                                                                | Live Demo                                                                                |
+| :-: | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| 01  | [GSAP](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/02_gsap)                     | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/02_gsap)             |
+| 02  | [Timeline](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/03_Timeline)             | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/03_Timeline)         |
+| 03  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/04_ScrollTrigger)   | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/04_ScrollTrigger)    |
+| 04  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/05_ScrollTrigger_2) | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/05_ScrollTrigger_2)  |
+| 05  | [SVG](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/06_SVG)                       | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/06_SVG)              |
+| 07  | [Cursor Animation](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial07_Cursor_Animation)           | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/07_Cursor_Animation) |
