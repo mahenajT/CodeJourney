@@ -13,5 +13,6 @@
 | 09  | [Infinite Scroll](https://github.com/mahenajT/CodeJourney/tree/main/09_Infinite_Scroll)                | [Live Demo](https://mahenajt.github.io/CodeJourney/09_Infinite_Scroll)   |
 | 11  | [Skill bar](https://github.com/mahenajT/CodeJourney/tree/main/11_Skillbar)                             | [Live Demo](https://mahenajt.github.io/CodeJourney/11_Skillbar)          |
 | 13  | [Landing Page](https://github.com/mahenajT/CodeJourney/tree/main/13_Landing-Page)                      | [Live Demo](https://mahenajt.github.io/CodeJourney/13_Landing-Page)      |
+| 14  | [Loading Animation](https://github.com/mahenajT/CodeJourney/tree/main/13_14_Block_Reveal)                      | [Live Demo](https://mahenajt.github.io/CodeJourney/14_Block_Reveal)      |
 
 ---

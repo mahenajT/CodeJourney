@@ -258,4 +258,4 @@ gsap.to("svg path", {
 | 03  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/04_ScrollTrigger)   | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/04_ScrollTrigger)    |
 | 04  | [ScrollTrigger](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/05_ScrollTrigger_2) | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/05_ScrollTrigger_2)  |
 | 05  | [SVG](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/06_SVG)                       | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/06_SVG)              |
-| 07  | [Cursor Animation](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial07_Cursor_Animation)           | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/07_Cursor_Animation) |
+| 07  | [Cursor Animation](https://github.com/mahenajT/CodeJourney/tree/main/00_GSAP_Tutorial/07_Cursor_Animation)           | [Live Demo](https://mahenajt.github.io/CodeJourney/00_GSAP_Tutorial/07_Cursor_Animation) |
